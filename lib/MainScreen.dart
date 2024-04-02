@@ -1,5 +1,5 @@
 import 'package:class01/appBarScreens/calls.dart';
-import 'package:class01/appBarScreens/camera.dart';
+import 'package:class01/appBarScreens/community.dart';
 import 'package:class01/appBarScreens/chats.dart';
 import 'package:class01/appBarScreens/status.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +23,7 @@ class _MainScreenState extends State<MainScreen>
   final List<Tab> topTabs = <Tab>[
     const Tab(
         icon: Icon(
-      Icons.camera_alt,
+      Icons.people,
       color: Colors.white,
     )),
     const Tab(
@@ -63,7 +63,7 @@ class _MainScreenState extends State<MainScreen>
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'WhatsApp',
             style: TextStyle(color: Colors.white),
           ),
@@ -73,7 +73,7 @@ class _MainScreenState extends State<MainScreen>
                 onPressed: () {
                   print("Search");
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.search,
                   color: Colors.white,
                 )),
@@ -129,7 +129,7 @@ class _MainScreenState extends State<MainScreen>
         body: TabBarView(
           controller: _tabController,
           children: [
-            Camera_view(),
+            Community(),
             Chats(),
             Status(),
             Calls(),
