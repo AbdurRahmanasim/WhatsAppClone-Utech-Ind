@@ -1,3 +1,4 @@
+import 'package:class01/ChatScreen/chatScreen.dart';
 import 'package:flutter/material.dart';
 
 class Chats extends StatefulWidget {
@@ -32,6 +33,13 @@ class _ChatsState extends State<Chats> {
 
   Widget chatlist(String name, String text, String time, String unreadMsg) {
     return ListTile(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ChatScreen(name : name),
+            ));
+      },
       leading: const CircleAvatar(
         backgroundColor: Colors.black,
       ),

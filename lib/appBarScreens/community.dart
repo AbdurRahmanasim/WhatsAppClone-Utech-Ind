@@ -25,10 +25,16 @@ class _CommunityState extends State<Community> {
             color: Color.fromARGB(255, 232, 232, 232),
             thickness: 4,
           ),
+          communitylist2("Utech Batch 02"),
           communitylist1(
-              "Utech Batch 02", "uzair joined from the campus group"),
-          communitylist1(
-              "Utech Batch 02", "uzair joined from the campus group"),
+              "Utech Online Classes", "uzair joined from the campus group"),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
+          communitylist1("Class Group", "ahmed joined from the .........."),
         ],
       )),
     );
@@ -42,14 +48,10 @@ class _CommunityState extends State<Community> {
       leading: Container(
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
-          color: Color.fromARGB(250, 248, 233, 233),
+          color: Color.fromARGB(249, 104, 220, 83),
         ),
         height: 40,
         width: 40,
-        child: const Icon(
-          Icons.people,
-          color: Colors.white,
-        ),
       ),
       title: Text(
         name,
@@ -57,14 +59,13 @@ class _CommunityState extends State<Community> {
       ),
       subtitle: Text(
         text,
-        style: TextStyle(color: Colors.black),
+        style: const TextStyle(color: Colors.black),
       ),
     );
   }
 
   Widget communitylist2(
     String name,
-    String text,
   ) {
     return ListTile(
       leading: Container(
@@ -82,10 +83,6 @@ class _CommunityState extends State<Community> {
       title: Text(
         name,
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-      ),
-      subtitle: Text(
-        text,
-        style: TextStyle(color: Colors.black),
       ),
     );
   }
